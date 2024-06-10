@@ -10,10 +10,10 @@ from time import sleep
 import os, signal, sys
 from rich.console import Console
 from rich.prompt import Prompt, IntPrompt
-from cpmnuker import CPMNuker
+from cpmnuker import CPMmind
 
-__CHANNEL_USERNAME__ = "CPMNuker"
-__GROUP_USERNAME__   = "CPMNukerChat"
+__CHANNEL_USERNAME__ = "CPMmind"
+__GROUP_USERNAME__   = "CPMmindChat"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
@@ -21,7 +21,7 @@ def signal_handler(sig, frame):
 
 def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
-    console.print("[bold green]♕ CPMNuker[/bold green]: Car Parking Multiplayer Hacking Tool.")
+    console.print("[bold green]♕ CPMmind[/bold green]: Car Parking Multiplayer Hacking Tool.")
     console.print(f"[bold green]♕ Telegram[/bold green]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue] or [bold blue]@{__GROUP_USERNAME__}[/bold blue].")
     console.print("==================================================")
     console.print("[bold yellow]! Note[/bold yellow]: Logout from CPM before using this tool !.", end="\n\n")
@@ -75,7 +75,7 @@ if __name__ == "__main__":
         acc_password = prompt_valid_value("[bold]➤ Account Password[/bold]", "Password", password=False)
         acc_access_key = prompt_valid_value("[bold]➤ Access Key[/bold]", "Access Key", password=False)
         console.print("[bold cyan]↻ Trying to Login[/bold cyan]: ", end=None)
-        cpm = CPMNuker(acc_access_key)
+        cpm = CPMmind(acc_access_key)
         login_response = cpm.login(acc_email, acc_password)
         if login_response != 0:
             if login_response == 100:
@@ -98,17 +98,17 @@ if __name__ == "__main__":
             banner(console)
             load_player_data(cpm)
             load_key_data(cpm)
-            console.print("[bold cyan](01): Increase Money ~ 1K[/bold cyan]")
-            console.print("[bold cyan](02): Increase Coins ~ 3.5K[/bold cyan]")
-            console.print("[bold cyan](03): King Rank ~ 4K[/bold cyan]")
-            console.print("[bold cyan](04): Change ID ~ 3.5K[/bold cyan]")
-            console.print("[bold cyan](05): Change Name ~ 100[/bold cyan]")
-            console.print("[bold cyan](06): Change Name (Rainbow) ~ 100[/bold cyan]")
-            console.print("[bold cyan](07): Unlock All Cars ~ 5K[/bold cyan]")
+            console.print("[bold cyan](01): Increase Money ~ FREE[/bold cyan]")
+            console.print("[bold cyan](02): Increase Coins ~ FREE[/bold cyan]")
+            console.print("[bold cyan](03): King Rank ~ FREE[/bold cyan]")
+            console.print("[bold cyan](04): Change ID ~ FREE[/bold cyan]")
+            console.print("[bold cyan](05): Change Name ~ FREE[/bold cyan]")
+            console.print("[bold cyan](06): Change Name (Rainbow) ~ FREE[/bold cyan]")
+            console.print("[bold cyan](07): Unlock All Cars ~ FREE[/bold cyan]")
             console.print("[bold cyan](08): Account Delete ~ FREE[/bold cyan]")
             console.print("[bold cyan](09): Account Register ~ FREE[/bold cyan]")
-            console.print("[bold cyan](10): Delete Friends ~ 500[/bold cyan]")
-            console.print("[bold cyan](11): Number Plates ~ 2K[/bold cyan]")
+            console.print("[bold cyan](10): Delete Friends ~ FREE[/bold cyan]")
+            console.print("[bold cyan](11): Number Plates ~ FRE[/bold cyan]")
             console.print("[bold cyan](00): Exit[/bold cyan]", end="\n\n")
             service = IntPrompt.ask("[bold]➤ Select a Service [red][0-9 or 0][/red][/bold]", choices=["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"], show_choices=False)
             if service == 0: # Exit

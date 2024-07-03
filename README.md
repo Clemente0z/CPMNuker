@@ -13,10 +13,10 @@
 ## Installation
 [don't know how to install python ?](#install-python)
 ```
-git clone https://github.com/CPMNuker/CPMNuker.git
+git clone https://github.com/Clemente0z/Clemente0z
 ```
 ```
-cd CPMNuker
+cd CPMClemente
 ```
 ```
 pip install -r requirements.txt

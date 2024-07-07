@@ -13,10 +13,10 @@
 ## Installation
 [don't know how to install python ?](#install-python)
 ```
-git clone https://github.com/Clemente0z/Clemente0z.git
+git clone https://github.com/Clemente/Clemente.git
 ```
 ```
-cd CPMClemente
+cd Clemente
 ```
 ```
 pip install -r requirements.txt
